@@ -8,7 +8,7 @@ const cam = document.querySelector('#webcam');
 let micAllowed = 1;
 let camAllowed = 1;
 
-let mediaConstraints = { video: true, audio: true };
+let mediaConstraints = { video: false, audio: true };
 
 navigator.mediaDevices.getUserMedia(mediaConstraints)
     .then(localstream => {
